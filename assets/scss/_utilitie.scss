@@ -1,0 +1,268 @@
+@import "./reset_var_bootstrap";
+
+.fw-lt-bold {
+  font-family: "29LT Bukra Bold";
+}
+
+.fw-lt-ex-bold {
+  font-family: "29LT Bukra extra Bold";
+}
+
+.shadow_cu {
+  box-shadow: 0px 0px 15px 0px #00000014;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-16 {
+  font-size: 16px;
+  @include media(mobile) {
+    & {
+      font-size: 14px;
+    }
+  }
+}
+.fs-14 {
+  font-size: 14px;
+  @include media(mobile) {
+    & {
+      font-size: 12px;
+    }
+  }
+}
+.fs-18 {
+  font-size: 18px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.py-36 {
+  padding: 36px 0;
+}
+.py-36 {
+  padding: 36px 0;
+}
+.bg-light-primary {
+  background-color: var(--bg-light-primary) !important;
+}
+.bg-gray-100 {
+  background-color: var(--gray-100);
+}
+.bg-gray-200 {
+  background-color: var(--gray-200);
+}
+.text-success {
+  color: var(--bs-success);
+}
+.text-danger {
+  color: var(--bs-danger) !important;
+}
+.bg-success {
+  background-color: var(--bs-success) !important;
+}
+.bg-light-success {
+  background-color: var(--bs-light-success);
+}
+.text-gray-300 {
+  color: var(--gray-300);
+}
+.text-gray-400 {
+  color: var(--gray-400) !important ;
+}
+.text-gray-500 {
+  color: var(--gray-500);
+}
+.text-gray-600 {
+  color: var(--gray-600);
+}
+
+.text-gray-800 {
+  color: var(--gray-800) !important;
+}
+.flex-column-fluid {
+  flex: 1 0 auto;
+}
+.flex-column-auto {
+  @include media(min-mobile) {
+    & {
+      flex: initial;
+    }
+  }
+}
+.flex-1 {
+  flex: 1;
+}
+.h-100px {
+  height: 100px;
+}
+.h-36px {
+  height: 36px;
+}
+.h-75px {
+  height: 77px;
+}
+.w-75px {
+  width: 77px;
+}
+.p--7 {
+  padding: 0.6rem !important;
+}
+.pb-77 {
+  padding-bottom: 77px;
+}
+.bg-light-danger {
+  background-color: var(--bg-light-danger);
+}
+.w-20 {
+  width: 20%;
+}
+.c-pointer {
+  cursor: pointer;
+}
+
+.border-dashed-secondary {
+  border: 1px dashed var(--bs-secondary-color);
+}
+.border-dashed-primary {
+  border: 1px dashed var(--primary-c);
+}
+.border-color {
+  border-color: var(--gray-200);
+}
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.border-radius-20 {
+  border-radius: 20px;
+}
+.border-radius-8 {
+  border-radius: 10px;
+}
+.border-radius-8 {
+  border-radius: 8px;
+}
+
+.btn-sm {
+  padding: 11px 25px;
+}
+.btn-lgg {
+  padding: 7px 30px;
+  @include media(mobile) {
+    & {
+      padding: 7px 20px;
+    }
+  }
+}
+.btn-xl {
+  padding: 11px 30px;
+}
+.btn-outline-dashed {
+  border-style: dashed;
+}
+.btn-danger:hover {
+  background-color: #c23e3e;
+}
+.btn-danger-light {
+  background-color: var(--bs-light-danger);
+  &:hover {
+    border: 1px solid var(--bs-danger);
+  }
+}
+.btn-primary-light {
+  background-color: var(--bg-light-primary);
+  &:hover {
+    border: 1px solid var(--primary-c);
+  }
+}
+.btn-success {
+  background-color: var(--bs-success);
+  &:hover {
+    background-color: var(--bs-success-h);
+  }
+}
+.btn-primary-border {
+  border: 1px solid var(--primary-c);
+  &:hover {
+    background-color: var(--primary-c);
+    color: #fff !important;
+  }
+}
+
+.btn-disable {
+  background-color: var(--gray-200);
+  transition: background-color 0.2s, color 0.2s;
+  &:hover,
+  &.active {
+    background-color: var(--primary-c);
+    color: #fff !important;
+    & svg {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+.anima {
+  animation: anim 0.4s;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease-in;
+  &:hover {
+    transform: translateY(-8px);
+  }
+}
+.dot {
+  background-color: var(--bg-light-primary);
+  gap: 5px;
+  span {
+    width: 7px;
+    height: 7px;
+    background-color: var(--primary-c);
+    display: inline-block;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    &:nth-child(1) {
+      transform: translateX(0);
+    }
+    &:nth-child(3) {
+      transform: translateX(0);
+    }
+  }
+  &:hover {
+    span {
+      &:nth-child(1) {
+        transform: translateX(-12px);
+      }
+      &:nth-child(3) {
+        transform: translateX(12px);
+      }
+    }
+  }
+}
+@include media(mobile) {
+  .flex-base-70 {
+    flex-basis: 70%;
+  }
+}

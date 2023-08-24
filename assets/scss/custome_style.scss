@@ -1,0 +1,225 @@
+@import "./reset_var_bootstrap";
+@import "./_mixin";
+@import "./_utilitie";
+@import "./_select2";
+@import "./_sliderRange";
+@import "./dataTables";
+
+@font-face {
+  font-family: "29LT Bukra Bold";
+  src: url("../font/29LTBUKRABOLD.TTF") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: "29LT Bukra extra Bold";
+  src: url("../font/29LTBUKRABOLDITALIC.TTF") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+  font-family: "29LT Bukra";
+  src: url("../font/29LTBUKRAREGULAR.TTF") format("truetype");
+  /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "29LT Bukra Bold";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// aside
+
+aside {
+  background-color: #2d2d2d;
+  align-items: center;
+  width: 6%;
+  position: fixed;
+  height: 100%;
+  transition: transform 0.5s ease, width 0.5s ease;
+  color: #ffffff;
+  position: relative;
+  z-index: 111111;
+
+  @include media(laptop) {
+    & {
+      position: fixed;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      transform: translatex(100%);
+      width: 70% !important;
+      &.active {
+        transform: translatex(0);
+      }
+    }
+  }
+  &:hover,
+  &.active {
+    width: 27%;
+  }
+  &:hover,
+  &.active {
+    .sha_logo {
+      width: 114px;
+    }
+  }
+  .logo-aside {
+    width: 100%;
+    border-bottom: 1px dashed #444444;
+    img {
+      width: 80px;
+      transition: 0.5s;
+    }
+  }
+
+  .arrow-aside {
+    top: 73px;
+    left: -18px;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .list_link {
+    a {
+      color: var(--txt-gray-93);
+      position: relative;
+      z-index: 5;
+      &::after {
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 0;
+        width: 0%;
+        height: 100%;
+        background-color: var(--primary-status-c);
+        z-index: -1;
+        border-radius: 0.5rem;
+        transition: width 0.2s ease-in-out;
+      }
+      &.active {
+        color: var(--bg-light-primary);
+        background-color: var(--primary-status-c);
+      }
+      &:hover {
+        color: var(--bg-light-primary);
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.txt {
+  white-space: nowrap;
+  display: none;
+  transition: color 0.2s;
+  > div {
+    gap: 7rem;
+  }
+  .aside-link {
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    font-size: 16px;
+    @include media(mobile) {
+      font-size: 12.9px;
+    }
+  }
+}
+
+aside.hover .aside-link {
+  width: 100%;
+  animation: swim 0.5s ease;
+}
+
+@keyframes swim {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+section {
+  .plugins {
+    background-color: var(--bg-light-primary);
+  }
+  .user_menu {
+    img {
+      width: 36px;
+    }
+  }
+
+  .toggle-aside {
+    display: none;
+    img {
+      width: 20px;
+    }
+    @media (max-width: 768px) {
+      display: inline;
+    }
+  }
+}
+
+.status {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #25d66c;
+}
+
+.tab .form-check {
+  background-color: #f1f1f2;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  padding: 0;
+}
+
+.tab .list-group-item.active .form-check {
+  border: 5px solid var(--primary-c);
+}
+select option:hover {
+  background-color: yellow !important;
+}
+
+#drop_list {
+  top: 70px;
+}
+
+.modal-content button.active .check-btn {
+  background-color: #fff;
+}
+
+.nav-tabs .nav-link:hover .check-btn,
+.nav-tabs .nav-link.active .check-btn {
+  border: 7px solid var(--bs-success);
+}
+.check-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 7px solid var(--gray-200);
+  background-color: #fff;
+}

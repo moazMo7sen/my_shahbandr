@@ -1,0 +1,1430 @@
+<html
+  lang="en"
+  dir="rtl"
+  direction="rtl"
+  style="direction: rtl"
+  data-bs-theme="light"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/node_modules/bootstrap/dist/css/bootstrap.rtl.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/js/select2/dist/css/select2.min.css"
+    />
+    <link rel="stylesheet" href="/assets/js/jquery-ui/jquery-ui.min.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/js/image-uploader/src/image-uploader.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/datatables.net-dt/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/datatables.net-responsive-dt/css/responsive.dataTables.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/scss/custome_style.css"
+    />
+    <title>shahbandar da shboard</title>
+  </head>
+  <body>
+    <div class="d-flex gap-1 h-100 justify-content-between">
+      <aside class="aside shadow-lg d-lg-flex flex-column top-0 start-0">
+        <div class="logo-aside pb-3 mb-5 mt-3 d-flex justify-content-center">
+          <img
+            src="assets/media/svg\Shahbandr-Logo-White-1.svg"
+            class="sha_logo"
+            alt=""
+          />
+        </div>
+        <ul class="p-0 aside_list overflow-hidden w-100">
+          <li class="list_link d-flex justify-content-center mb-3">
+            <a
+              href=""
+              class="active d-flex gap-3 fw-lt-bold justify-content-center align-items-center py-2 px-2 rounded-2"
+            >
+              <div>
+                <span class="icon">
+                  <img src="assets/media/svg/education.svg" alt="" />
+                </span>
+              </div>
+              <div class="txt">
+                <div class="d-flex align-items-center">
+                  <div class="txt">
+                    <div class="aside-link">الرئيسية</div>
+                  </div>
+                  <img src="/assets/media/svg/arrows_list.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list_link d-flex justify-content-center mb-3">
+            <a
+              href=""
+              class="d-flex gap-3 fw-lt-bold justify-content-center align-items-center py-2 px-2 rounded-2"
+            >
+              <div>
+                <span class="icon">
+                  <img src="assets/media/svg/education.svg" alt="" />
+                </span>
+              </div>
+              <div class="txt">
+                <div class="d-flex align-items-center">
+                  <div class="txt">
+                    <div class="aside-link">الرئيسية</div>
+                  </div>
+                  <img src="assets\media\svg\arrows_list.svg" alt="" />
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div
+          class="arrow-aside position-absolute bg-white p-2 rounded-2 shadow-sm"
+        >
+          <img src="assets\media\svg\arrows.svg" alt="" />
+        </div>
+      </aside>
+      <section class="container-fluid flex-grow-1 overflow-y-scroll">
+        <nav class="row shadow_cu py-4">
+          <div class="col-12">
+            <div
+              class="d-flex justify-content-between justify-content-lg-end align-items-center"
+            >
+              <div class="toggle-aside p-2 rounded-2 shadow-sm">
+                <img src="assets\media\svg\toggle_side.svg" alt="" />
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="plugins p-2 rounded-3">
+                  <img src="assets\media\svg\technology.svg" alt="" />
+                </div>
+                <div class="user_menu">
+                  <img
+                    src="/assets/media/svg/avatars.jpg "
+                    class="rounded-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="row justify-content-center my-5">
+          <div class="col-12 col-sm-12 col-xl-8">
+            <div class="shadow_cu border-radius-20 p-4 mb-4">
+              <div
+                class="align-items-center d-flex py-4 border-bottom-1 border-start-0 border-top-0 border-end-0 border-light-subtle border"
+              >
+                <div class="fs-4">الباقة الحالية</div>
+                <div class="ms-auto">
+                  <button
+                    data-bs-toggle="modal"
+                    data-bs-target="#upgrade"
+                    id=""
+                    class="btn btn-lgg btn-primary-border text-primary border-radius-8 fs-14"
+                  >
+                    قم بالتجديد الأن
+                  </button>
+                </div>
+              </div>
+              <table class="table mt-5 W-50">
+                <tbody>
+                  <tr>
+                    <th class="fs-16">الباقة</th>
+                    <td class="text-danger fs-16">Enterprise</td>
+                  </tr>
+                  <tr>
+                    <td class="fs-16">مدة الاشتراك</td>
+                    <th class="text-gray-800 fs-16">شهري</th>
+                  </tr>
+                  <tr>
+                    <td class="fs-16">الإجمالي</td>
+                    <th class="text-gray-800 fs-16">EGP 1,500</th>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-5 W-50">
+                <tbody>
+                  <tr>
+                    <th class="fs-16">الحالة</th>
+                    <td class="text-success fs-16">نشط</td>
+                  </tr>
+                  <tr>
+                    <td class="fs-16">تاريخ البدء</td>
+                    <th class="text-gray-800 fs-16">يونيو 5, 2023</th>
+                  </tr>
+                  <tr>
+                    <td class="fs-16">تاريخ الدفع التالي</td>
+                    <th class="text-gray-800 fs-16">نوفمبر 3, 2023</th>
+                  </tr>
+                  <tr>
+                    <td class="fs-16">تاريخ انتهاء الفترة التجريبية</td>
+                    <th class="text-gray-800 fs-16">يونيو 19, 2023</th>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-end fs-12 text-gray-500">
+                هل تريد التجديد مبكرًا بواسطة السداد؟
+                <a href=" " class="ms-1"> .انقر هنا</a>
+              </div>
+            </div>
+            <div class="shadow_cu border-radius-20 p-4 mb-4">
+              <div
+                class="d-flex py-4 border-bottom-1 border-start-0 border-top-0 border-end-0 border-light-subtle border"
+              >
+                <div class="fs-4">الفواتير</div>
+              </div>
+              <div class="card-body p-0">
+                <table id="dataTable" class="" style="width: 100%">
+                  <thead>
+                    <tr>
+                      <th class="fs-16">الطلب</th>
+                      <th class="fs-16">التاريخ</th>
+                      <th class="fs-16">القيمة</th>
+                      <th class="fs-16">الحالة</th>
+                      <th class="fs-16">الفاتورة</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="text-nowrap text-gray-800 fs-14"
+                          >1024457888</span
+                        >
+                      </td>
+                      <td>
+                        <span class="text-nowrap fs-14">23-Jul-2023</span>
+                      </td>
+                      <td>
+                        <span class="text-nowrap text-danger fs-14"
+                          >$38.00</span
+                        >
+                      </td>
+                      <td class="">
+                        <span
+                          class="badge text-success bg-light-success p-2 fs-14"
+                        >
+                          تأكيد</span
+                        >
+                      </td>
+                      <td class="text-nowrap">
+                        <button
+                          class="btn btn-primary-light text-primary fs-14"
+                        >
+                          تحميل
+                          <img
+                            src="/assets/media/svg/Exit.svg"
+                            alt=""
+                            class="ms-2"
+                          />
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-xl-4 mt-4 mt-md-0">
+            <div class="shadow_cu border-radius-20 p-4">
+              <div
+                class="position-relative d-flex align-items-center py-4 border-bottom-1 border-start-0 border-top-0 border-end-0 border-light-subtle border"
+              >
+                <div class="fs-4">ملخص الإشتراك</div>
+                <div class="ms-auto">
+                  <button
+                    id="drop_list_btn"
+                    class="btn_open btn border-radius-8 dot p-2 btn-primary-light d-flex align-items-center justify-content-center fs-14"
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+                <div
+                  id="drop_list"
+                  class="hide w-50 p-2 border-radius-8 bg-white shadow_cu position-absolute end-0 anima"
+                >
+                  <ul class="p-0 m-0 d-flex flex-column gap-2">
+                    <li class="">
+                      <button
+                        data-bs-toggle="modal"
+                        data-bs-target="#upgrade"
+                        class="W-100 btn btn-primary-light text-primary fs-14"
+                      >
+                        تغير بالباقة
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="W-100 btn btn-danger-light text-danger fs-14"
+                      >
+                        إلغاء الإشتراك
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <!-- modal -->
+                <div
+                  class="modal fade"
+                  id="upgrade"
+                  tabindex="-1"
+                  aria-labelledby="upgradeLabel"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-large modal-dialog-centered"
+                  >
+                    <div class="modal-content border-0 px-4 py-5">
+                      <div class="pb-4 m-auto">
+                        <h4 class="fs-5">تغير الباقة</h4>
+                      </div>
+                      <div>
+                        <ul
+                          class="gap-2 m-auto w-50 p-2 border-radius-8 mb-4 border border-1 nav nav-tabs justify-content-center"
+                          id="myTab"
+                          role="tablist"
+                        >
+                          <li
+                            class="flex-column-fluid nav-item"
+                            role="presentation"
+                          >
+                            <button
+                              class="w-100 border-radius-8 border nav-link active flex-wrap"
+                              id="yearly-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#yearly-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="yearly-tab-pane"
+                              aria-selected="true"
+                            >
+                              سنوي
+                            </button>
+                          </li>
+                          <li
+                            class="flex-column-fluid nav-item"
+                            role="presentation"
+                          >
+                            <button
+                              class="w-100 border-radius-8 border nav-link"
+                              id="Monthly-tab"
+                              data-bs-toggle="tab"
+                              data-bs-target="#Monthly-tab-pane"
+                              type="button"
+                              role="tab"
+                              aria-controls="Monthly-tab-pane"
+                              aria-selected="false"
+                            >
+                              شهري
+                            </button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                          <!-- year -->
+
+                          <div
+                            class="tab-pane fade show active"
+                            id="yearly-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="yearly-tab"
+                            tabindex="0"
+                          >
+                            <div class="gap-3 d-flex flex-column flex-xl-row">
+                              <!-- tab -->
+                              <ul
+                                class="gap-3 flex-1 flex-column P-3 nav nav-tabs border-dashed-primary border-radius-8"
+                                id="myTab"
+                                role="tablist"
+                              >
+                                <li
+                                  class="border-dashed-secondary nav-item border-radius-8 w-100"
+                                  role="presentation"
+                                >
+                                  <button
+                                    class="p-3 text-gray-800 gap-1 gap-sm-3 align-items-center d-flex w-100 border-radius-8 nav-link active flex-wrap"
+                                    id="basic-y-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#basic-y-tab-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="basic-y-tab-pane"
+                                    aria-selected="true"
+                                  >
+                                    <div class="check-btn"></div>
+                                    <div>
+                                      <h4 class="text-start fs-18">BASIC</h4>
+                                      <span class="fs-12 text-gray-500"
+                                        >كل ما تحتاجه لإنشاء متجر
+                                      </span>
+                                    </div>
+                                    <div
+                                      class="ms-auto d-flex align-items-center fs-3 gap-1"
+                                    >
+                                      <small class="fs-6"> Mon/</small>
+                                      <span class="mb-1">4,000</span>
+                                      <small class="fs-6">EGP</small>
+                                    </div>
+                                  </button>
+                                </li>
+                                <li
+                                  class="border-dashed-secondary nav-item border-radius-8 w-100"
+                                  role="presentation"
+                                >
+                                  <button
+                                    class="flex-wrap p-3 text-gray-800 gap-1 gap-sm-3 align-items-center d-flex w-100 border-radius-8 nav-link flex-wrap"
+                                    id="pro-y-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#pro-y-tab-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pro-y-tab-pane"
+                                    aria-selected="false"
+                                  >
+                                    <div class="check-btn"></div>
+                                    <div>
+                                      <h4 class="text-start fs-18">PRO</h4>
+                                      <span class="fs-12 text-gray-500"
+                                        >قم برفع مستوى عملك
+                                      </span>
+                                    </div>
+                                    <div
+                                      class="ms-auto d-flex align-items-center fs-3 gap-1"
+                                    >
+                                      <small class="fs-6"> Mon/</small>
+                                      <span class="mb-1">8,000</span>
+                                      <small class="fs-6">EGP</small>
+                                    </div>
+                                  </button>
+                                </li>
+                                <li
+                                  class="border-dashed-secondary nav-item border-radius-8 w-100"
+                                  role="presentation"
+                                >
+                                  <button
+                                    class="p-3 text-gray-800 gap-1 gap-sm-3 align-items-center d-flex w-100 border-radius-8 nav-link flex-wrap"
+                                    id="enterprise-y-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#enterprise-y-tab-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="enterprise-y-tab-pane"
+                                    aria-selected="false"
+                                  >
+                                    <div class="check-btn"></div>
+                                    <div class="text-start">
+                                      <h4
+                                        class="flex-column flex-sm-row text-start d-flex align-items-start"
+                                      >
+                                        <span class="fs-18"> ENTERPRISE</span>
+                                        <span
+                                          class="mt-2 mt-sm-0 badge bg-light-success text-success fs-10 ms-0 ms-sm-2"
+                                          >الأكثر شيوعاً</span
+                                        >
+                                      </h4>
+                                      <span class="fs-12 text-gray-500"
+                                        >قم برفع مستوى عملك
+                                      </span>
+                                    </div>
+                                    <div
+                                      class="ms-auto d-flex align-items-center fs-3 gap-1"
+                                    >
+                                      <small class="fs-6"> Mon/</small>
+                                      <span class="mb-1">15,000</span>
+                                      <small class="fs-6">EGP</small>
+                                    </div>
+                                  </button>
+                                </li>
+                                <li
+                                  class="border-dashed-secondary nav-item border-radius-8 w-100"
+                                  role="presentation"
+                                >
+                                  <button
+                                    class="p-3 text-gray-800 gap-1 gap-sm-3 align-items-center d-flex w-100 border-radius-8 nav-link flex-wrap"
+                                    id="vip-y-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#vip-y-tab-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="vip-y-tab-pane"
+                                    aria-selected="false"
+                                  >
+                                    <div class="check-btn"></div>
+                                    <div class="text-start flex-base-70">
+                                      <h4
+                                        class="text-start d-flex align-items-start"
+                                      >
+                                        <span class="fs-18"> VIP</span>
+                                      </h4>
+                                      <span class="fs-12 text-gray-500"
+                                        >لنماذج الأعمال التجارية المتقدمة
+                                      </span>
+                                    </div>
+                                    <a class="ms-auto btn btn-success border-0">
+                                      اتصل بنا
+                                    </a>
+                                  </button>
+                                </li>
+                              </ul>
+                              <!-- content -->
+                              <div class="flex-1 tab-content" id="myTabContent">
+                                <div
+                                  class="h-100 tab-pane fade show active bg-gray-100 p-4 border-radius-8"
+                                  id="basic-y-tab-pane"
+                                  role="tabpanel"
+                                  aria-labelledby="basic-y-tab"
+                                  tabindex="0"
+                                >
+                                  <h4 class="fs-18">
+                                    ماذا يوجد في هذه الخطة ؟
+                                  </h4>
+                                  <ul class="m-0 mt-4 p-0">
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        سيرفرات امنة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        دومين فرعي امن مجانا
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        اضافة نطاق مخصص
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        تصميمات متميزة ومتجاوبة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        عدد غير محدود من المنتجات
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        شركات الشحن العالمية والمحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        بوابات الدفع العالمية و المحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        منصات دروبشيبنج عالميةومحلية
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div
+                                  class="h-100 tab-pane fade bg-gray-100 p-4 border-radius-8"
+                                  id="pro-y-tab-pane"
+                                  role="tabpanel"
+                                  aria-labelledby="pro-y-tab"
+                                  tabindex="0"
+                                >
+                                  <h4 class="fs-18">
+                                    ماذا يوجد في هذه الخطة ؟
+                                  </h4>
+                                  <ul class="m-0 mt-4 p-0">
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        سيرفرات امنة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        دومين فرعي امن مجانا
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        اضافة نطاق مخصص
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        تصميمات متميزة ومتجاوبة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        عدد غير محدود من المنتجات
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        شركات الشحن العالمية والمحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        بوابات الدفع العالمية و المحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        منصات دروبشيبنج عالميةومحلية
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div
+                                  class="h-100 tab-pane fade bg-gray-100 p-4 border-radius-8"
+                                  id="enterprise-y-tab-pane"
+                                  role="tabpanel"
+                                  aria-labelledby="enterprise-y-tab"
+                                  tabindex="0"
+                                >
+                                  <h4 class="fs-18">
+                                    ماذا يوجد في هذه الخطة ؟
+                                  </h4>
+                                  <ul class="m-0 mt-4 p-0">
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        سيرفرات امنة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        دومين فرعي امن مجانا
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        اضافة نطاق مخصص
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        تصميمات متميزة ومتجاوبة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        عدد غير محدود من المنتجات
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        شركات الشحن العالمية والمحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        بوابات الدفع العالمية و المحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        منصات دروبشيبنج عالميةومحلية
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div
+                                  class="h-100 tab-pane fade bg-gray-100 p-4 border-radius-8"
+                                  id="vip-y-tab-pane"
+                                  role="tabpanel"
+                                  aria-labelledby="vip-y-tab"
+                                  tabindex="0"
+                                >
+                                  <h4 class="fs-18">
+                                    ماذا يوجد في هذه الخطة ؟
+                                  </h4>
+                                  <ul class="m-0 mt-4 p-0">
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        سيرفرات امنة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        دومين فرعي امن مجانا
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        اضافة نطاق مخصص
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        تصميمات متميزة ومتجاوبة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        عدد غير محدود من المنتجات
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        شركات الشحن العالمية والمحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        بوابات الدفع العالمية و المحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        منصات دروبشيبنج عالميةومحلية
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- month -->
+                          <div
+                            class="tab-pane fade"
+                            id="Monthly-tab-pane"
+                            role="tabpanel"
+                            aria-labelledby="Monthly-tab"
+                            tabindex="0"
+                          >
+                            <div class="gap-3 d-flex flex-column flex-xl-row">
+                              <!-- tab -->
+                              <ul
+                                class="gap-3 flex-1 flex-column P-3 nav nav-tabs border-dashed-primary border-radius-8"
+                                id="myTab"
+                                role="tablist"
+                              >
+                                <li
+                                  class="border-dashed-secondary nav-item border-radius-8 w-100"
+                                  role="presentation"
+                                >
+                                  <button
+                                    class="flex-wrap p-3 text-gray-800 gap-1 gap-sm-3 align-items-center d-flex w-100 border-radius-8 nav-link active"
+                                    id="basic-m-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#basic-m-tab-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="basic-m-tab-pane"
+                                    aria-selected="true"
+                                  >
+                                    <div class="check-btn"></div>
+                                    <div>
+                                      <h4 class="text-start fs-18">BASIC</h4>
+                                      <span class="fs-12 text-gray-500"
+                                        >كل ما تحتاجه لإنشاء متجر
+                                      </span>
+                                    </div>
+                                    <div
+                                      class="ms-auto d-flex align-items-center fs-3 gap-1"
+                                    >
+                                      <small class="fs-6"> Mon/</small>
+                                      <span class="mb-1">4,000</span>
+                                      <small class="fs-6">EGP</small>
+                                    </div>
+                                  </button>
+                                </li>
+                                <li
+                                  class="border-dashed-secondary nav-item border-radius-8 w-100"
+                                  role="presentation"
+                                >
+                                  <button
+                                    class="flex-wrap p-3 text-gray-800 gap-1 gap-sm-3 align-items-center d-flex w-100 border-radius-8 nav-link"
+                                    id="pro-m-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#pro-m-tab-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="pro-m-tab-pane"
+                                    aria-selected="false"
+                                  >
+                                    <div class="check-btn"></div>
+                                    <div>
+                                      <h4 class="text-start fs-18">PRO</h4>
+                                      <span class="fs-12 text-gray-500"
+                                        >قم برفع مستوى عملك
+                                      </span>
+                                    </div>
+                                    <div
+                                      class="ms-auto d-flex align-items-center fs-3 gap-1"
+                                    >
+                                      <small class="fs-6"> Mon/</small>
+                                      <span class="mb-1">8,000</span>
+                                      <small class="fs-6">EGP</small>
+                                    </div>
+                                  </button>
+                                </li>
+                                <li
+                                  class="border-dashed-secondary nav-item border-radius-8 w-100"
+                                  role="presentation"
+                                >
+                                  <button
+                                    class="p-3 text-gray-800 gap-1 gap-sm-3 align-items-center d-flex w-100 border-radius-8 nav-link flex-wrap"
+                                    id="enterprise-m-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#enterprise-m-tab-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="enterprise-m-tab-pane"
+                                    aria-selected="false"
+                                  >
+                                    <div class="check-btn"></div>
+                                    <div class="text-start">
+                                      <h4
+                                        class="flex-column flex-sm-row text-start d-flex align-items-start"
+                                      >
+                                        <span class="fs-18"> ENTERPRISE</span>
+                                        <span
+                                          class="mt-2 mt-sm-0 badge bg-light-success text-success fs-10 ms-0 ms-sm-2"
+                                          >الاكثر شيوعاً</span
+                                        >
+                                      </h4>
+                                      <span class="fs-12 text-gray-500"
+                                        >قم برفع مستوى عملك
+                                      </span>
+                                    </div>
+                                    <div
+                                      class="ms-auto d-flex align-items-center fs-3 gap-1"
+                                    >
+                                      <small class="fs-6"> Mon/</small>
+                                      <span class="mb-1">15,000</span>
+                                      <small class="fs-6">EGP</small>
+                                    </div>
+                                  </button>
+                                </li>
+                                <li
+                                  class="border-dashed-secondary nav-item border-radius-8 w-100"
+                                  role="presentation"
+                                >
+                                  <button
+                                    class="flex-wrap p-3 text-gray-800 gap-1 gap-sm-3 align-items-center d-flex w-100 border-radius-8 nav-link"
+                                    id="vip-m-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#vip-m-tab-pane"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="vip-m-tab-pane"
+                                    aria-selected="false"
+                                  >
+                                    <div class="check-btn"></div>
+                                    <div class="text-start flex-base-70">
+                                      <h4
+                                        class="text-start d-flex align-items-start"
+                                      >
+                                        <span class="fs-18"> VIP</span>
+                                      </h4>
+                                      <span class="fs-12 text-gray-500"
+                                        >لنماذج الأعمال التجارية المتقدمة
+                                      </span>
+                                    </div>
+                                    <a class="ms-auto btn btn-success border-0">
+                                      اتصل بنا
+                                    </a>
+                                  </button>
+                                </li>
+                              </ul>
+                              <!-- content -->
+                              <div class="flex-1 tab-content" id="myTabContent">
+                                <div
+                                  class="h-100 tab-pane fade show active bg-gray-100 p-4 border-radius-8"
+                                  id="basic-m-tab-pane"
+                                  role="tabpanel"
+                                  aria-labelledby="basic-m-tab"
+                                  tabindex="0"
+                                >
+                                  <h4 class="fs-18">
+                                    ماذا يوجد في هذه الخطة ؟
+                                  </h4>
+                                  <ul class="m-0 mt-4 p-0">
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        سيرفرات امنة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        دومين فرعي امن مجانا
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        اضافة نطاق مخصص
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        تصميمات متميزة ومتجاوبة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        عدد غير محدود من المنتجات
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        شركات الشحن العالمية والمحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        بوابات الدفع العالمية و المحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        منصات دروبشيبنج عالميةومحلية
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div
+                                  class="h-100 tab-pane fade bg-gray-100 p-4 border-radius-8"
+                                  id="pro-m-tab-pane"
+                                  role="tabpanel"
+                                  aria-labelledby="pro-m-tab"
+                                  tabindex="0"
+                                >
+                                  <h4 class="fs-18">
+                                    ماذا يوجد في هذه الخطة ؟
+                                  </h4>
+                                  <ul class="m-0 mt-4 p-0">
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        سيرفرات امنة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        دومين فرعي امن مجانا
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        اضافة نطاق مخصص
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        تصميمات متميزة ومتجاوبة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        عدد غير محدود من المنتجات
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        شركات الشحن العالمية والمحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        بوابات الدفع العالمية و المحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        منصات دروبشيبنج عالميةومحلية
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div
+                                  class="h-100 tab-pane fade bg-gray-100 p-4 border-radius-8"
+                                  id="enterprise-m-tab-pane"
+                                  role="tabpanel"
+                                  aria-labelledby="enterprise-m-tab"
+                                  tabindex="0"
+                                >
+                                  <h4 class="fs-18">
+                                    ماذا يوجد في هذه الخطة ؟
+                                  </h4>
+                                  <ul class="m-0 mt-4 p-0">
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        سيرفرات امنة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        دومين فرعي امن مجانا
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        اضافة نطاق مخصص
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        تصميمات متميزة ومتجاوبة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        عدد غير محدود من المنتجات
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        شركات الشحن العالمية والمحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        بوابات الدفع العالمية و المحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        منصات دروبشيبنج عالميةومحلية
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div
+                                  class="h-100 tab-pane fade bg-gray-100 p-4 border-radius-8"
+                                  id="vip-m-tab-pane"
+                                  role="tabpanel"
+                                  aria-labelledby="vip-m-tab"
+                                  tabindex="0"
+                                >
+                                  <h4 class="fs-18">
+                                    ماذا يوجد في هذه الخطة ؟
+                                  </h4>
+                                  <ul class="m-0 mt-4 p-0">
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        سيرفرات امنة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        دومين فرعي امن مجانا
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        اضافة نطاق مخصص
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        تصميمات متميزة ومتجاوبة
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        عدد غير محدود من المنتجات
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        شركات الشحن العالمية والمحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        بوابات الدفع العالمية و المحلية
+                                      </p>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-center">
+                                      <img
+                                        src="/assets/media/svg/Tick.svg"
+                                        alt=""
+                                      />
+                                      <p class="m-0 ms-2 text-gray-400 fs-14">
+                                        منصات دروبشيبنج عالميةومحلية
+                                      </p>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pt-4 mx-auto">
+                        <button
+                          data-bs-toggle="modal"
+                          data-bs-target="#upgrade"
+                          id=""
+                          class="btn btn-xl btn-primary border-radius-8 fs-14"
+                        >
+                          تغير الباقة
+                        </button>
+                        <button
+                          data-bs-toggle="modal"
+                          data-bs-target="#upgrade"
+                          id=""
+                          class="btn btn-xl btn-primary-border text-primary border-radius-8 fs-14"
+                        >
+                          تغيير النطاق
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pb-4 my-4 d-flex align-items-center gap-3 border-bottom-1 border-start-0 border-top-0 border-end-0 border-light-subtle border"
+              >
+                <div>
+                  <img
+                    width="72px"
+                    src="/assets/media/svg/avatars.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                </div>
+                <div>
+                  <span>Nader Sayed</span>
+                  <span class="fs-12 text-gray-500 d-block">
+                    Nadershahbandr@gmail.com</span
+                  >
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-nowrap">تفاصيل الباقة</th>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-danger fs-16">Enterprise</td>
+                    <th class="text-gray-800 fs-16">1500 / شهري</th>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-nowrap">تفاصيل الإشتراك</th>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fs-16">الحالة</td>
+                    <th class="text-success fs-16">نشط</th>
+                  </tr>
+                  <tr>
+                    <td class="fs-16">تاريخ البدء</td>
+                    <th class="text-gray-800 fs-16">يونيو 5, 2023</th>
+                  </tr>
+                  <tr>
+                    <td class="fs-16">تاريخ الدفع التالي</td>
+                    <th class="text-gray-800 fs-16">يونيو 5, 2023</th>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="d-flex mt-3 gap-2">
+                <button
+                  type="submit"
+                  id=""
+                  class="fs-14 btn btn-primary px-3 btn-sm border-radius-8 w-100"
+                >
+                  تعديل الاشتراك
+                </button>
+                <button
+                  type="submit"
+                  id=""
+                  class="fs-14 btn btn-primary-border text-primary px-3 btn-sm border-radius-8 w-100"
+                >
+                  تغيير النطاق
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/node_modules/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+
+    <script src="/assets/js/select2/dist/js/select2.min.js"></script>
+    <script src="/assets/js/jquery-ui/jquery-ui.js"></script>
+    <script src="/assets/js/image-uploader/dist/image-uploader.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

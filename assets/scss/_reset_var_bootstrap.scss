@@ -1,0 +1,133 @@
+@import "./_mixin";
+:root {
+  --primary-c: #5278ff;
+  --primary-c-h: #3155d5;
+  --primary-status-c: #394366;
+  --bs-primary: #5278ff;
+  --bs-text-primary: #5278ff;
+  --bs-text-secondary: #999999;
+  --bs-primary-active: #5278ff;
+  --bg-light-primary: #ebf4ff;
+  --bs-alert-color: #5278ff;
+  --bs-text-muted: #eef6ff;
+  --bs-border-color: #3e97ff;
+  --bs-danger: #d95050;
+  --bs-light-danger: #ffdfdf;
+  --bs-light-success: #e8fff3;
+  --bs-success: #5ad090;
+  --bs-success-h: #48bb7c;
+  --bs-primary-light: #ebf4ff;
+  --bs-app-bg-color: #fff;
+  --bg-dark: #2d2d2d;
+  --txt-gray-93: #939393;
+  --bs-secondary-color: #bcbcbc;
+  --bs-primary-dark: #5897fb1c;
+  --bs-nav-link-color: #8b8b8b;
+  --bs-list-group-active-color: #5278ff;
+  --gray-100: #f8f9fa;
+  --gray-200: #d9d9d9;
+  --gray-300: #999999;
+  --gray-400: #5e6278;
+  --gray-500: #a1a5b7;
+  --gray-600: #6c757d;
+  --gray-800: #343a40;
+}
+.list-group-item.active {
+  background-color: var(--bg-light-primary);
+}
+
+.btn-primary {
+  background-color: var(--primary-c);
+  &:hover {
+    background-color: var(--primary-c-h);
+  }
+}
+.btn-danger {
+  background-color: #d95050;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: var(--bs-secondary-color);
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: var(--bg-dark);
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  position: relative;
+  transition: 0.5s;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active::after {
+  content: "";
+  width: 36px;
+  height: 2.5px;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  background-color: var(--primary-c);
+}
+thead tr th {
+  color: var(--gray-800) !important;
+  font-size: 20px;
+  padding-bottom: 22px !important;
+}
+tbody tr th,
+tbody tr td {
+  color: var(--gray-300) !important;
+}
+.table > :not(caption) > * > * {
+  padding: 15px;
+  border-bottom: 1px dashed var(--gray-200);
+}
+tfoot tr td {
+  color: var(--gray-800) !important;
+  padding-bottom: 22px !important;
+  border-bottom: 0 !important;
+}
+
+@include media(labtop_l) {
+  .W-50 {
+    width: 100% !important;
+  }
+}
+
+.modal-dialog .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: var(--primary-c);
+  color: #fff;
+}
+
+.modal-dialog .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active::after {
+  display: none;
+}
+
+.modal-dialog-large {
+  max-width: 80% !important;
+  @include media(tablet) {
+    & {
+      max-width: 100% !important;
+    }
+  }
+}
+.modal-dialog-large .nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  background: var(--primary-c);
+  color: #fff !important;
+}
+.modal-dialog button.active {
+  color: #fff !important;
+}
+.nav-tabs .nav-link:hover span,
+.modal-dialog button.active span {
+  color: #fff;
+}
