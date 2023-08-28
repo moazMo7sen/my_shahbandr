@@ -17,25 +17,35 @@
 }
 .fs-12 {
   font-size: 12px;
-}
-.fs-16 {
-  font-size: 16px;
-  @include media(mobile) {
+   @include media("mobile") {
     & {
-      font-size: 14px;
+      font-size: 11px;
     }
   }
 }
-.fs-14 {
-  font-size: 14px;
-  @include media(mobile) {
+.fs-16 {
+  font-size: 16px;
+  @include media("mobile") {
     & {
       font-size: 12px;
     }
   }
 }
+.fs-14 {
+  font-size: 14px !important;
+  @include media("mobile") {
+    & {
+      font-size: 12px  !important;
+    }
+  }
+}
 .fs-18 {
   font-size: 18px;
+  @include media("mobile") {
+    & {
+      font-size: 16px;
+    }
+  }
 }
 .mb-12 {
   margin-bottom: 12px;
@@ -46,9 +56,7 @@
 .py-36 {
   padding: 36px 0;
 }
-.py-36 {
-  padding: 36px 0;
-}
+
 .bg-light-primary {
   background-color: var(--bg-light-primary) !important;
 }
@@ -90,7 +98,7 @@
   flex: 1 0 auto;
 }
 .flex-column-auto {
-  @include media(min-mobile) {
+  @include media("min-mobile") {
     & {
       flex: initial;
     }
@@ -105,11 +113,18 @@
 .h-36px {
   height: 36px;
 }
+.h-40px {
+  height: 40px;
+}
 .h-75px {
   height: 77px;
 }
 .w-75px {
   width: 77px;
+}
+.h-w-48px {
+  height: 48px;
+  width: 48px;
 }
 .p--7 {
   padding: 0.6rem !important;
@@ -127,8 +142,17 @@
   cursor: pointer;
 }
 
+.w-sm-25 {
+  @include media("labtop_lg_min") {
+    width: 25% !important;
+  }
+}
+
 .border-dashed-secondary {
   border: 1px dashed var(--bs-secondary-color);
+}
+.border-dashed-secondary-t {
+  border-top: 1px dashed var(--bs-secondary-color);
 }
 .border-dashed-primary {
   border: 1px dashed var(--primary-c);
@@ -155,7 +179,7 @@
 }
 .btn-lgg {
   padding: 7px 30px;
-  @include media(mobile) {
+  @include media("mobile") {
     & {
       padding: 7px 20px;
     }
@@ -194,6 +218,12 @@
     background-color: var(--primary-c);
     color: #fff !important;
   }
+}
+.danger-light-hover:hover {
+  background-color: var(--bs-light-danger);
+}
+.primary-light-hover:hover {
+  background-color: var(--bg-light-primary);
 }
 
 .btn-disable {
@@ -236,9 +266,11 @@
 .dot {
   background-color: var(--bg-light-primary);
   gap: 5px;
+  height: 37px;
+  width: 37px;
   span {
-    width: 7px;
-    height: 7px;
+    width: 5px;
+    height: 5px;
     background-color: var(--primary-c);
     display: inline-block;
     border-radius: 50%;
@@ -253,16 +285,24 @@
   &:hover {
     span {
       &:nth-child(1) {
-        transform: translateX(-12px);
+        transform: translateX(-10px);
       }
       &:nth-child(3) {
-        transform: translateX(12px);
+        transform: translateX(10px);
       }
     }
   }
 }
-@include media(mobile) {
+@include media("mobile") {
   .flex-base-70 {
     flex-basis: 70%;
   }
+}
+
+
+.z-index-100000000{
+  z-index: 1000000000000;
+}
+.h-55vh{
+      height: 55vh;
 }

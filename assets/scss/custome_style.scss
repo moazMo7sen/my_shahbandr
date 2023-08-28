@@ -1,9 +1,10 @@
-@import "./reset_var_bootstrap";
 @import "./_mixin";
+@import "./reset_var_bootstrap";
 @import "./_utilitie";
 @import "./_select2";
 @import "./_sliderRange";
 @import "./dataTables";
+@import "./_bootstrapdatepicker.scss";
 
 @font-face {
   font-family: "29LT Bukra Bold";
@@ -29,6 +30,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 1.6 !important;
 }
 
 body,
@@ -44,6 +46,7 @@ a {
   text-decoration: none;
 }
 
+
 // aside
 
 aside {
@@ -57,36 +60,56 @@ aside {
   position: relative;
   z-index: 111111;
 
-  @include media(laptop) {
+  @include media("laptop") {
     & {
       position: fixed;
     }
   }
-  @media (max-width: 768px) {
+  @include media("laptop") {
     & {
       transform: translatex(100%);
-      width: 70% !important;
+      width: 40% !important;
       &.active {
         transform: translatex(0);
       }
     }
   }
-  &:hover,
+  @include media("mobile") {
+    & {
+      width: 70% !important;
+    }
+  }
+
   &.active {
     width: 27%;
+    max-width: 300px;
+
+    @include media("labtop_lg") {
+      width: 35%;
+    }
+    @include media("labtop_xl") {
+      width: 22%;
+    }
   }
-  &:hover,
+
+
   &.active {
     .sha_logo {
       width: 114px;
     }
   }
+
   .logo-aside {
     width: 100%;
     border-bottom: 1px dashed #444444;
     img {
       width: 80px;
       transition: 0.5s;
+      @include media("labtop_lg") {
+        & {
+          width: 60px;
+        }
+      }
     }
   }
 
@@ -134,20 +157,27 @@ aside {
   display: none;
   transition: color 0.2s;
   > div {
-    gap: 7rem;
+    gap: 5rem;
+      @include media("mobile") {
+        &{
+          gap: 4rem;
+        }
+      }
   }
   .aside-link {
     cursor: pointer;
     overflow: hidden;
     transition: width 0.5s ease-in-out;
     font-size: 16px;
-    @include media(mobile) {
-      font-size: 12.9px;
+        min-width: 86px;
+        @include media("mobile") {
+          font-size: 12.9px;
+          min-width:80px;
     }
   }
 }
 
-aside.hover .aside-link {
+ .aside-link.swim{
   width: 100%;
   animation: swim 0.5s ease;
 }
@@ -206,6 +236,7 @@ select option:hover {
 
 #drop_list {
   top: 70px;
+  width: 180px;
 }
 
 .modal-content button.active .check-btn {
@@ -216,10 +247,34 @@ select option:hover {
 .nav-tabs .nav-link.active .check-btn {
   border: 7px solid var(--bs-success);
 }
+.check-btn.active {
+  border: 5px solid var(--primary-c);
+  width: 20px;
+  height: 20px;
+}
 .check-btn {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 7px solid var(--gray-200);
   background-color: #fff;
+}
+.aside_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.655);
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+
+.error{
+  font-size: 9px;
+  padding-top: 5px;
+  color: red;
 }

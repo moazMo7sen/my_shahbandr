@@ -38,8 +38,11 @@
 
 .btn-primary {
   background-color: var(--primary-c);
+  transform: .2s;
   &:hover {
-    background-color: var(--primary-c-h);
+    background-color:transparent;
+    color: var(--primary-c);
+    border: 1px solid var(--primary-c) !important;
   }
 }
 .btn-danger {
@@ -84,20 +87,25 @@ tbody tr th,
 tbody tr td {
   color: var(--gray-300) !important;
 }
+.table-width tbody tr th,
+.table-width tbody tr td {
+  min-width: 250px;
+    @include media("tablet") {
+      &{
+        min-width: 190px !important;
+      }
+    }
+
+
+}
 .table > :not(caption) > * > * {
   padding: 15px;
-  border-bottom: 1px dashed var(--gray-200);
+  border-bottom:0;
 }
 tfoot tr td {
   color: var(--gray-800) !important;
   padding-bottom: 22px !important;
   border-bottom: 0 !important;
-}
-
-@include media(labtop_l) {
-  .W-50 {
-    width: 100% !important;
-  }
 }
 
 .modal-dialog .nav-tabs .nav-item.show .nav-link,
@@ -112,10 +120,10 @@ tfoot tr td {
 }
 
 .modal-dialog-large {
-  max-width: 80% !important;
-  @include media(tablet) {
-    & {
-      max-width: 100% !important;
+max-width: 1000px !important;
+@include media("labtop_lg") {
+  & {
+      max-width: 700px !important;
     }
   }
 }
@@ -130,4 +138,16 @@ tfoot tr td {
 .nav-tabs .nav-link:hover span,
 .modal-dialog button.active span {
   color: #fff;
+}
+.form-control:focus {
+  box-shadow: none;
+
+  outline: 1px solid var(--primary-c);
+}
+.W-50 {
+  @include media("laptop") {
+    & {
+      width: 100% !important;
+    }
+  }
 }

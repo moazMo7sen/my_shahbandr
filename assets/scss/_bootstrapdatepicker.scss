@@ -1,0 +1,40 @@
+.datepicker-dropdown {
+  animation: slide_up 0.4s ease;
+}
+@keyframes slide_up {
+  0% {
+    transform: translatey(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.datepicker {
+  border-color: #e7eaed;
+  top: 40px !important;
+  .dow {
+    font-size: 12px !important;
+    padding: 0 5px !important;
+    color: var(--primary-c) !important;
+  }
+  .month {
+    font-size: 12px !important;
+  }
+  .datepicker-switch {
+    font-size: 16px !important;
+    color: var(--gray-800) !important;
+  }
+  .prev,
+  .next {
+    color: var(--primary-c) !important;
+    background-color: var(--bg-light-primary);
+  }
+  thead tr th {
+    padding-bottom: 0 !important;
+  }
+  .active {
+    background-color: var(--primary-c) !important;
+    color: var(--bg-light-primary) !important;
+  }
+}

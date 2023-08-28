@@ -11,12 +11,16 @@ $breakpoints: (
   "laptop": (
     max-width: 991.98px,
   ),
-  "labtop_l": (
+  "labtop_lg": (
     max-width: 1199.98px,
   ),
-  "labtop_xl": (
-    max-width: 1399.98px,
+  "labtop_lg_min": (
+    min-width: 1199.98px,
   ),
+  "labtop_xl": (
+    min-width: 1399.98px,
+  ),
+  
 );
 
 @mixin media($name) {
