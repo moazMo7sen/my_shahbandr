@@ -259,3 +259,17 @@ $(document).ready(function () {
     language: "ar",
   });
 });
+
+// verfication
+
+$("#verfication input").each(function (i, ele) {
+  $(this).on("input", function () {
+    if ($(this).val() !== "") {
+      $(this).next("input").removeAttr("disabled");
+      $(this).next("input").focus();
+      if (i === 5) {
+        $("#verfication").submit();
+      }
+    }
+  });
+});

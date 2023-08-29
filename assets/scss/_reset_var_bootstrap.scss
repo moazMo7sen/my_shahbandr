@@ -38,9 +38,9 @@
 
 .btn-primary {
   background-color: var(--primary-c);
-  transform: .2s;
+  transform: 0.2s;
   &:hover {
-    background-color:transparent;
+    background-color: transparent;
     color: var(--primary-c);
     border: 1px solid var(--primary-c) !important;
   }
@@ -90,17 +90,15 @@ tbody tr td {
 .table-width tbody tr th,
 .table-width tbody tr td {
   min-width: 250px;
-    @include media("tablet") {
-      &{
-        min-width: 190px !important;
-      }
+  @include media("tablet") {
+    & {
+      min-width: auto !important;
     }
-
-
+  }
 }
 .table > :not(caption) > * > * {
   padding: 15px;
-  border-bottom:0;
+  border-bottom: 0;
 }
 tfoot tr td {
   color: var(--gray-800) !important;
@@ -120,9 +118,9 @@ tfoot tr td {
 }
 
 .modal-dialog-large {
-max-width: 1000px !important;
-@include media("labtop_lg") {
-  & {
+  max-width: 1000px !important;
+  @include media("labtop_lg") {
+    & {
       max-width: 700px !important;
     }
   }
